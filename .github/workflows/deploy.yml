@@ -23,7 +23,7 @@ jobs:
         run: mvn clean package
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: springboot-jar
           path: target/*.jar
