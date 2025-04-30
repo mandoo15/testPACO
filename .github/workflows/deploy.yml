@@ -24,8 +24,8 @@ jobs:
       - name: Build the project
         run: ./gradlew build
 
-      - name: Upload jar artifact
-        uses: actions/upload-artifact@v3
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2
         with:
           name: spring-boot-app
           path: build/libs/*.jar
